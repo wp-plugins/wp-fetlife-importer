@@ -5,7 +5,7 @@ Plugin URI: http://maybemaimed.com/2013/03/05/ready-to-ditch-fetlife-tools-to-ma
 Description: Import your FetLife Writings and Pictures to your WordPress blog as posts.
 Author: maymay
 Author URI: http://maybemaimed.com/cyberbusking/
-Version: 0.2.1
+Version: 0.2.2
 Text Domain: wp-fetlife-importer
 License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */

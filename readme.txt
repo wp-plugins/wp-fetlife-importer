@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=meita
 Tags: importer, wordpress, FetLife
 Requires at least: 3.5
 Tested up to: 3.5.1
-Stable tag: 0.2.1
+Stable tag: 0.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,14 +17,10 @@ The WP FetLife Importer is a [WordPress](https://wordpress.org/) plugin offering
 This plugin is free software, but please consider [making a donation](http://maybemaimed.com/cyberbusking/) if you found it useful. If you're an organization that needs help [escaping FetLife](http://maybemaimed.com/escape-from-fetlife/), please [ask me for a quote](http://maybemaimed.com/seminars/#booking-inquiry).
 
 The WP FetLife Importer will import the following content from a FetLife user account:
-The following table describes the conversions WP FetLife Importer makes from your FetLife content:
 
-<table summary="FetLife to WordPress conversion table.">
-<tr><th>FetLife content type</th><th>WordPress content type</th></tr>
-<tr><td>Profile</td><td>Author</td></tr>
-<tr><td>Writings</td><td>Posts (with categories)</td></tr>
-<tr><td>Pictures</td><td>Attachments</td></tr>
-</table>
+* A FetLife Profile becomes a WordPress Author
+* FetLife Writings become WordPress Posts
+* FetLife Pictures become WordPress attachment pages
 
 Yes, WP FetLife Importer also imports comments.
 
@@ -42,7 +38,7 @@ Yes, WP FetLife Importer also imports comments.
 
 = Why aren't some of my Pictures being imported?  =
 
-Most likely, it's because you haven't written any captions on your FetLife Pictures. You need to make sure that each of the pictures on your FetLife profile has its own (unique) caption, so WP WordPress Importer won't think it's already imported that picture.
+Most likely, it's because you haven't written any captions on your FetLife Pictures. You need to make sure that each of the pictures on your FetLife profile has its own (unique) caption, so WP FetLife Importer won't think it's already imported that picture.
 
 = Why is FetLife so awful? =
 
@@ -54,6 +50,9 @@ Because it's a corporation that doesn't give a shit about you. I'm serious. Chec
 * [Tracking rape culture's social license to operate online](http://maybemaimed.com/2012/12/21/tracking-rape-cultures-social-license-to-operate-online/)
 
 == Changelog ==
+
+= 0.2.2 =
+* Clarify some features in the documentation.
 
 = 0.2.1 =
 * First deployed to WordPress.org's Plugin Repository. :)
