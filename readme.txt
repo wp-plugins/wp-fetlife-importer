@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=meita
 Tags: importer, wordpress, FetLife
 Requires at least: 3.5
 Tested up to: 3.5.1
-Stable tag: 0.2
+Stable tag: 0.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,7 +19,7 @@ This plugin is free software, but please consider [making a donation](http://may
 The WP FetLife Importer will import the following content from a FetLife user account:
 The following table describes the conversions WP FetLife Importer makes from your FetLife content:
 
-<table> summary="FetLife to WordPress conversion table."
+<table summary="FetLife to WordPress conversion table.">
 <tr><th>FetLife content type</th><th>WordPress content type</th></tr>
 <tr><td>Profile</td><td>Author</td></tr>
 <tr><td>Writings</td><td>Posts (with categories)</td></tr>
@@ -54,6 +54,9 @@ Because it's a corporation that doesn't give a shit about you. I'm serious. Chec
 * [Tracking rape culture's social license to operate online](http://maybemaimed.com/2012/12/21/tracking-rape-cultures-social-license-to-operate-online/)
 
 == Changelog ==
+
+= 0.2.1 =
+* First deployed to WordPress.org's Plugin Repository. :)
 
 = 0.2 =
 * Import content posted as FetLife Pictures and comments, too.
