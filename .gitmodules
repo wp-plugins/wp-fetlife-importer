@@ -1,3 +1,0 @@
-[submodule "lib/FetLife"]
-	path = lib/FetLife
-	url = git://github.com/meitar/libFetLife.git
