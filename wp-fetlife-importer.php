@@ -1,14 +1,15 @@
 <?php
-/*
-Plugin Name: WP FetLife Importer
-Plugin URI: http://maybemaimed.com/2013/03/05/ready-to-ditch-fetlife-tools-to-make-the-transition-easier/
-Description: Import your FetLife Writings and Pictures to your WordPress blog as posts.
-Author: maymay
-Author URI: http://maybemaimed.com/cyberbusking/
-Version: 0.2.2
-Text Domain: wp-fetlife-importer
-License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-*/
+/**
+ * Plugin Name: WP FetLife Importer
+ * Plugin URI: http://maybemaimed.com/2013/03/05/ready-to-ditch-fetlife-tools-to-make-the-transition-easier/
+ * Description: Import your FetLife Writings and Pictures to your WordPress blog as posts.
+ * Author: maymay
+ * Author URI: http://maybemaimed.com/cyberbusking/
+ * Version: 0.2.3
+ * Text Domain: wp-fetlife-importer
+ * Domain Path: /languages
+ * License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ */
 
 if ( ! defined( 'WP_LOAD_IMPORTERS' ) )
 	return;
@@ -120,7 +121,7 @@ class WP_FetLife_Import extends WP_Importer {
 			if ( defined('IMPORT_DEBUG') && IMPORT_DEBUG ) {
 				var_dump($this->FL);
 			}
-			die('Failed to log in to FetLife. Wait a bit and try again.');
+			die(__('Failed to log in to FetLife. Wait a bit and try again.', 'wp-fetlife-importer'));
 		}
 		$fl_writings = $this->FL->getWritingsOf($_POST['imported_authors'][0]);
 		// Prepare FetLife Writings as WordPress posts.
@@ -130,13 +131,13 @@ class WP_FetLife_Import extends WP_Importer {
 				$description = '';
 				switch ($writing->category) {
 					case 'Journal Entry':
-						$description = 'about my life and journey';
+						$description = __('about my life and journey', 'wp-fetlife-importer');
 						break;
 					case 'Erotica':
-						$description = 'that I have written';
+						$description = __('that I have written', 'wp-fetlife-importer');
 						break;
 					case 'Note':
-						$description = 'about random stuff';
+						$description = __('about random stuff', 'wp-fetlife-importer');
 						break;
 				}
 
@@ -767,7 +768,12 @@ class WP_FetLife_Import extends WP_Importer {
 
 	// Close div.wrap
 	function footer() {
-		echo '<p>This tool is brought to you courtesy of <a href="http://maybemaimed.com/2011/03/20/fetlife-considered-harmful/">maymay&rsquo;s foresight</a>. Please consider <a href="http://maybemaimed.com/cyberbusking/">making a donation</a>. If you want to keep a backup of your entire FetLife account history, try <a href="http://fetlife.maybemaimed.com/">this free FetLife Exporter</a>.</p>';
+        echo '<p>' . sprintf(
+            __('This tool is brought to you courtesy of %1$smaymay&rsquo;s foresight%2$s. Please consider %3$smaking a donation%2$s. If you want to keep a backup of your entire FetLife account history, try %4$sthis free FetLife Exporter%2$s.'),
+            '<a href="http://maybemaimed.com/2011/03/20/fetlife-considered-harmful/">', '</a>',
+            '<a href="http://maybemaimed.com/cyberbusking/">',
+            '<a href="http://fetlife.maybemaimed.com/">'
+        ) . '</p>';
 		echo '</div>';
 	}
 
@@ -780,17 +786,17 @@ class WP_FetLife_Import extends WP_Importer {
 ?>
 <form id="wp-fetlife-importer-connect-form" method="post" action="<?php echo esc_attr(wp_nonce_url('admin.php?import=wp-fetlife-importer&amp;step=1', 'wp-fetlife-importer'));?>">
 	<p>
-		<label for="fl_nickname">FetLife nickname</label>
-		<input id="fl_nickname" name="fl_nickname" placeholder="Enter your FetLife nickname" />
+        <label for="fl_nickname"><?php _e('FetLife nickname', 'wp-fetlife-importer');?></label>
+        <input id="fl_nickname" name="fl_nickname" placeholder="<?php _e('Enter your FetLife nickname', 'wp-fetlife-importer');?>" />
 	</p>
 	<p>
-		<label for="fl_password">FetLife password</label>
-		<input type="password" id="fl_password" name="fl_password" placeholder="Enter your FetLife password" />
+        <label for="fl_password"><?php _e('FetLife password', 'wp-fetlife-importer');?></label>
+		<input type="password" id="fl_password" name="fl_password" placeholder="<?php _e('Enter your FetLife password', 'wp-fetlife-importer');?>" />
 	</p>
 	<p>
-		<label for="fl_proxyurl">Proxy URL</label>
+		<label for="fl_proxyurl"><?php _e('Proxy URL', 'wp-fetlife-importer');?></label>
 		<input id="fl_proxyurl" name="fl_proxyurl" placeholder="http://proxy.example.com:8080" />
-		<br /><span class="description">If you need to use a proxy to connect to FetLife, enter its URL here. Otherwise, leave this blank to make a direct connection.</span>
+		<br /><span class="description"><?php _e('If you need to use a proxy to connect to FetLife, enter its URL here. Otherwise, leave this blank to make a direct connection.', 'wp-fetlife-importer');?></span>
 	</p>
 	<?php submit_button(__('Connect to FetLife and import'), 'wp-fetlife-importer');?>
 </form>
@@ -847,7 +853,7 @@ class WP_FetLife_Import extends WP_Importer {
 	 * Added to http_request_timeout filter to force timeout at 60 seconds during import
 	 * @return int 60
 	 */
-	function bump_request_timeout() {
+	function bump_request_timeout($val) {
 		return 60;
 	}
 

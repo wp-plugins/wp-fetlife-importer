@@ -3,8 +3,8 @@ Contributors: meitar
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=meitarm%40gmail%2ecom&lc=US&item_number=WP%20FetLife%20Importer&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: importer, wordpress, FetLife
 Requires at least: 3.5
-Tested up to: 3.5.1
-Stable tag: 0.2.2
+Tested up to: 3.9.2
+Stable tag: 0.2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,6 +54,10 @@ Because it's a corporation that doesn't give a shit about you. I'm serious. Chec
 * [Tracking rape culture's social license to operate online](http://maybemaimed.com/2012/12/21/tracking-rape-cultures-social-license-to-operate-online/)
 
 == Changelog ==
+
+= 0.2.3 =
+* Spanish translation.
+* Fix minor bug in importer timeout.
 
 = 0.2.2 =
 * Clarify some features in the documentation.
