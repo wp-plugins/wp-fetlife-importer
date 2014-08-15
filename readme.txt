@@ -14,12 +14,9 @@ Import your FetLife Writings and Pictures to your WordPress blog as posts.
 
 The WP FetLife Importer is a [WordPress](https://wordpress.org/) plugin offering an easy way to import your [FetLife](https://en.wikipedia.org/wiki/FetLife) Writings and Pictures to a WordPress blog. If you're using a [WordPress.com](https://wordpress.com) blog or want to move your FetLife content to a non-WordPress blogging platform, try [the FetLife to WXR Generator instead](http://fetlife.maybemaimed.com/fetlife2wxr/).
 
-This plugin is free software, but please consider [making a donation](http://maybemaimed.com/cyberbusking/) if you found it useful. If you're an organization that needs help [escaping FetLife](http://maybemaimed.com/escape-from-fetlife/), please [ask me for a quote](http://maybemaimed.com/seminars/#booking-inquiry).
-
-The WP FetLife Importer will import the following content from a FetLife user account:
 The following table describes the conversions WP FetLife Importer makes from your FetLife content:
 
-<table> summary="FetLife to WordPress conversion table."
+<table summary="FetLife to WordPress conversion table.">
 <tr><th>FetLife content type</th><th>WordPress content type</th></tr>
 <tr><td>Profile</td><td>Author</td></tr>
 <tr><td>Writings</td><td>Posts (with categories)</td></tr>
@@ -27,6 +24,8 @@ The following table describes the conversions WP FetLife Importer makes from you
 </table>
 
 Yes, WP FetLife Importer also imports comments.
+
+This plugin is free software, but please consider [making a donation](http://maybemaimed.com/cyberbusking/) if you found it useful. If you're an organization that needs help [escaping FetLife](http://maybemaimed.com/escape-from-fetlife/), please [ask me for a quote](http://maybemaimed.com/seminars/#booking-inquiry).
 
 == Installation ==
 
@@ -46,7 +45,7 @@ Most likely, it's because you haven't written any captions on your FetLife Pictu
 
 = Why is FetLife so awful? =
 
-Because it's a corporation that doesn't give a shit about you. I'm serious. Check out the following resources:
+Because [FetLife is a corporation that doesn't give a shit about you](http://disruptingdinnerparties.com/2013/05/08/got-consent-3-fetlife/). I'm serious. Check out the following resources:
 
 * [The privacy information FetLife doesn't want you to read](http://maybemaimed.com/2012/09/26/the-privacy-information-fetlife-doesnt-want-you-to-read/)
 * [Help FetLife's rape culture FAADE away](http://days.maybemaimed.com/post/39785638940/last-october-i-introduced-the-fetlife-alleged)
@@ -56,7 +55,7 @@ Because it's a corporation that doesn't give a shit about you. I'm serious. Chec
 == Changelog ==
 
 = 0.2.3 =
-* Spanish translation.
+* Spanish translation (thanks, Andrew Kurtis).
 * Fix minor bug in importer timeout.
 
 = 0.2.2 =
