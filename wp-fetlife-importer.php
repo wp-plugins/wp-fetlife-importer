@@ -769,7 +769,7 @@ class WP_FetLife_Import extends WP_Importer {
 	// Close div.wrap
 	function footer() {
         echo '<p>' . sprintf(
-            __('This tool is brought to you courtesy of %1$smaymay&rsquo;s foresight%2$s. Please consider %3$smaking a donation%2$s. If you want to keep a backup of your entire FetLife account history, try %4$sthis free FetLife Exporter%2$s.'),
+            __('This tool is brought to you courtesy of %1$smaymay&rsquo;s foresight%2$s. Please consider %3$smaking a donation%2$s. If you want to keep a backup of your entire FetLife account history, try %4$sthis free FetLife Exporter%2$s.', 'wp-fetlife-importer'),
             '<a href="http://maybemaimed.com/2011/03/20/fetlife-considered-harmful/">', '</a>',
             '<a href="http://maybemaimed.com/cyberbusking/">',
             '<a href="http://fetlife.maybemaimed.com/">'
@@ -798,7 +798,7 @@ class WP_FetLife_Import extends WP_Importer {
 		<input id="fl_proxyurl" name="fl_proxyurl" placeholder="http://proxy.example.com:8080" />
 		<br /><span class="description"><?php _e('If you need to use a proxy to connect to FetLife, enter its URL here. Otherwise, leave this blank to make a direct connection.', 'wp-fetlife-importer');?></span>
 	</p>
-	<?php submit_button(__('Connect to FetLife and import'), 'wp-fetlife-importer');?>
+	<?php submit_button(__('Connect to FetLife and import', 'wp-fetlife-importer'));?>
 </form>
 <?php
 		echo '</div>';
