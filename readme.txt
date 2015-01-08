@@ -12,7 +12,7 @@ Import your FetLife Writings and Pictures to your WordPress blog as posts.
 
 == Description ==
 
-The WP FetLife Importer is a [WordPress](https://wordpress.org/) plugin offering an easy way to import your [FetLife](https://en.wikipedia.org/wiki/FetLife) Writings and Pictures to a WordPress blog. If you're using a [WordPress.com](https://wordpress.com) blog or want to move your FetLife content to a non-WordPress blogging platform, try [the FetLife to WXR Generator instead](http://fetlife.maybemaimed.com/fetlife2wxr/).
+The WP FetLife Importer is a [WordPress](https://wordpress.org/) plugin offering an easy way to import your [FetLife](https://en.wikipedia.org/wiki/FetLife) Writings and Pictures to a WordPress blog. If you're using a [WordPress.com](https://wordpress.com) blog or want to move your FetLife content to a non-WordPress blogging platform, try [the FetLife to WXR Generator instead](http://fetlife.maybemaimed.com/fetlife2wxr/). For widgets, shortcodes, and other WordPress bells and whistles that show FetLife data, try the [WP-FetLife](https://wordpress.org/plugins/fetlife/) plugin. :)
 
 The following table describes the conversions WP FetLife Importer makes from your FetLife content:
 
@@ -25,7 +25,7 @@ The following table describes the conversions WP FetLife Importer makes from you
 
 Yes, WP FetLife Importer also imports comments.
 
-This plugin is free software, but please consider [making a donation](http://maybemaimed.com/cyberbusking/) if you found it useful. If you're an organization that needs help [escaping FetLife](http://maybemaimed.com/escape-from-fetlife/), please [ask me for a quote](http://maybemaimed.com/seminars/#booking-inquiry).
+This plugin is free software, but please consider [making a donation](http://maybemaimed.com/cyberbusking/) if you found it useful.
 
 == Installation ==
 
